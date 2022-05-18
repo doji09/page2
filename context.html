@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:title" content="Tramline">
+		<meta property="og:url" content="https://tramline.app">
+		<meta property="og:description" content="mobile release engineering, for everyone.">
+		<meta property="og:type" content="website">
+		<title>
+			Tramline
+		</title>
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+		<style>
+		.bigger {
+		  font-size: 1.35rem;
+		}
+		header > nav {
+			font-size: 0.9rem;
+		}
+		header > nav a, header > nav a:visited {
+			border-radius: 40px;
+			border: 1.5px solid #000;
+		}
+		header > nav a:active, header > nav a:hover {
+			border-radius: 8px;
+			border: 1.5px solid #06c;
+		}
+		#current-page {
+			border-radius: 8px;
+			border: 3px solid #06c;
+		}
+		#logo {
+			margin-top: 24px;
+		}
+		</style>
+	</head>
+	<body>
+		<header>
+			<picture>
+				<source srcset="tram-181-dark.png" media="(prefers-color-scheme: dark)"/> 
+				<img id="logo" src="tram-181.png" alt="tramline" width="100px">
+			</picture>
+			<h1>
+				Tramline
+			</h1>
+			<h6>
+				MOBILE RELEASE ENGINEERING, <mark>FOR EVERYONE.</mark>
+			</h6>
+			<nav>
+				<a href="index.html">Home</a> <a href="context.html" id="current-page">Context</a> <a href="https://tollygunge.mataroa.blog">Blog</a>
+			</nav>
+		</header>
+		<main>
+			<p>
+				Modern smartphones and their app stores are very new in the industry. iOS and Android saw exponential growth only after 2010. For a long time, this did not impact engineering because apps were either small in scope or secondary channels to a business.
+			</p>
+			<p>
+				This changed after the <u>wild success of app-only businesses</u> like Uber, Instagram, Swiggy, Gojek, etc. Today, it is common for businesses to be built around an app experience, which means apps are critical to the success of those businesses.
+			</p>
+			
+			<img src="backend-tooling.png" width="340px" style="background-color: #eee; float: left; margin-right: 1rem;"/>
+			
+			<p>
+				Engineering teams are acutely aware that the state of developer tooling for backend and frontend teams is a decade ahead of what mobile developers get to use regularly.
+			</p>
+			<p>
+				As a result, an app-first business tends to spend a lot of effort ensuring its apps are stable and perform reliably. This <u>adds engineering overhead</u> because now the organization must stitch together different tools to solve their needs. They must also maintain this internal tooling while also trying to meet business requirements.
+			</p>
+			<h3>
+				A multi-faceted problem
+			</h3>
+			<p>
+				This is not an easy problem, nor is it one that permits a singular solution, so with Tramline we’ve chosen to start with simplifying the deployment process. 
+			</p>
+				
+			<p>
+				Releasing apps is key to the success of an app-first business. It is a consistently <u>repeated transaction</u> because it is what delivers value to customers, ergo an incorrect build being released incurs a very high cost.
+			</p>
+			<p>
+				Further, the Play Store and App Store are walled gardens with Google and Apple setting all the rules, which can and do change many times. Continuous delivery, a proven valuable practice, is impossible in these stores and so is the rollback of bad builds. Even the control of over-the-air updates rests with the user and the device. In that sense, apps are much more <u>like on-premise software</u> that cannot be frequently updated.
+			</p>
+
+			<img src="stakeholders.png" width="340px" style="background-color: #eee; float: left; margin-right: 1rem;"/>			
+			<p>
+				For the vast majority of the app ecosystem, releasing a new version involves many steps and multiple stakeholders. The process is simple when the team and product are small and do not move fast. However, for large-scale fast-moving products, app releases <u>become exponentially more complicated</u> and begin to look something like this:
+			</p>
+			
+			<ul>
+				<li>Agreeing on a date to ensure all activities are completed on time
+				</li>
+				<li>Deciding features, improvements, and bug fixes that will be shipped
+				</li>
+				<li>Making builds pointing to various (staging, preprod, prod) API envs
+				</li>
+				<li>Automated and manual testing of builds by developers and QA teams
+				</li>
+				<li>Product sign off on the correctness of what is being shipped
+				</li>
+				<li>Updating builds with fixes/changes so they align with the release decision
+				</li>
+				<li>Notifying stakeholders of the progress of the release
+				</li>
+				<li>Staged rollout of the final build and monitoring metrics to ensure stability
+				</li>
+				<li>Creating and deploying "hotfix" builds if something critical is amiss
+				</li>
+				<li>Repeat all this again!
+				</li>
+			</ul>
+			<p>
+				The release process is documented in a tool (e.g. Google Docs, Confluence) as a series of steps and checklists that have to be followed. The process is run by a person <u>assigned as the release pilot</u> – someone who is accountable for a correct run. The pilot’s role is one that often rotates within the engineering team because when a release is not being run the pilot can go back to their regular development duties. Some very large scale companies even have dedicated release engineering teams.
+			</p>
+			
+			<aside>
+				<p>
+				“Worse than a checklist is one that cannot be relied on.”
+				</p>
+			</aside>
+			<p>
+				The release process checklist, like all checklists, <u>is a maintenance burden</u> because the process, tools, or steps change over time. Small out-of-band tasks may be done by a team (or specific engineers) that may never get mentioned in the checklist.
+			</p>
+			<p>
+				Human factors also play another role here. Churn in the team is expected at all organizations, and every time that happens the team must make sure that all release-related knowledge has been transferred from memory and committed to documentation.
+			</p>
+			
+			<h3>
+				A clear aim
+			</h3>
+			<p>
+				Our mission is to equip teams with tools that help them <u>focus on delivering business value</u>, and not on ancillary activities like driving a release checklist. With Tramline, we hope to <u>reduce the uncertainty</u> around releases for everyone involved and <u>reduce the opportunity cost</u> incurred by the organization because of the aforementioned overheads.
+			</p>
+			
+			<!-- ------------------------------- -->
+			
+			<h3>
+				Join the waitlist!
+			</h3>
+			
+			<iframe src="https://tramalpha.substack.com/embed" width="720" height="320" style="border:2px solid #EEE; background: transparent;" frameborder="0" scrolling="no"></iframe>
+			
+			<section class="bottom round-full p-2 mt-2">
+				<p class="p-big mt-2">
+					<img src="prtl.jpg" width="160px" align="left" style="margin-right: 1em;"> Prior to starting Tramline, Pratul was the co-founder & CTO of <a href="https://obvious.in/">Obvious</a>, where he helped clients like Myntra, Dunzo, Ola Cabs and Flipkart with mobile engineering challenges.
+				</p>
+				<p class="p-big mt-2">
+					Before Obvious, he was mobile engineer #1 at <a href="https://obvious.in/">Practo</a> (2011) and a contributor to <a href="https://obvious.in/">Drupal</a> (2008-2011).
+				</p>
+			</section>
+		</main><!-- Calendly badge widget begin -->
+		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script> 
+		<script type="text/javascript">
+		window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/tramline/45?hide_landing_page_details=1&hide_gdpr_banner=1', text: 'Interested? Talk to us!', color: '#0069ff', textColor: '#ffffff', branding: true }); }
+		</script> <!-- Calendly badge widget end -->
+	</body>
+</html>
