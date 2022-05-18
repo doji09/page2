@@ -14,6 +14,9 @@
 	    .bigger {
 	        font-size: 1.35rem;
 	    }
+		.smaller {
+			font-size: 1rem;
+		}
 		#logo {
 			margin-top: 24px;
 		}
@@ -22,11 +25,11 @@
 <body>
     <header>
 		<picture>
-		  <source srcset="tram-181-dark.png" media="(prefers-color-scheme: dark)" />  
+		  <source srcset="tram-181-dark.png" media="(prefers-color-scheme: dark)" />
 		  <img id="logo" src="tram-181.png" alt="tramline" width="100px" />
 		</picture>
 		<h1>Tramline</h1>
-		<h6>MOBILE RELEASE ENGINEERING, <MARK>FOR EVERYONE.</mark></h6>
+		<p class="smaller">mobile release engineering,<br/><mark>for everyone.</mark></p>
 		<nav>
 		  <a href="index.html" id="current-page">Home</a>
 		  <a href="context.html">Context</a>
