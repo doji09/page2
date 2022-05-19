@@ -10,6 +10,7 @@
     <title>Tramline</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">  
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	<script src="https://kit.fontawesome.com/ff488807cd.js" crossorigin="anonymous"></script>
 	<style>
 	    .bigger {
 	        font-size: 1.35rem;
@@ -19,6 +20,12 @@
 		}
 		#logo {
 			margin-top: 24px;
+		}
+		footer > a, footer > i {
+			font-size: 1.1rem;
+		}
+		article {
+			background-color: var(--disabled);
 		}
 	</style>
 </head>
@@ -31,14 +38,16 @@
 		<h1>Tramline</h1>
 		<p class="smaller">mobile release engineering,<br/><mark>for everyone.</mark></p>
 		<nav>
-		  <a href="index.html" id="current-page">Home</a>
-		  <a href="context.html">Context</a>
-		  <a href="https://tollygunge.mataroa.blog">Blog</a>
-		  <a href="https://discord.gg/4JrxDJQX">Discord</a>
+		  <a href="index.html" id="current-page"><i class="fa-solid fa-mobile-retro"></i> Home</a>
+		  <a href="context.html"><i class="fa-solid fa-asterisk"></i> Context</a>
+		  <a href="https://tollygunge.mataroa.blog"><i class="fa-solid fa-note-sticky"></i> Blog</a>
 		</nav>
 	</header>
 
 	<main>
+		<article>
+			<i class="fa-brands fa-discord"></i> Join our <a href="https://discord.gg/4JrxDJQX">Discord</a> server!
+		</article>
 		<h3>Codify your release process</h3>
 		<p class="bigger">
 			Tramline lets you codify the multiple parts of your release process as the steps of a release train. We do this with <mark>minimal disruption</mark> to the existing investments of the engineering team. 
@@ -68,16 +77,20 @@
 			<br/>			<br/>
 		</div>
 		
-		<section class="bottom round-full p-2 mt-2">
+		<hr/>
 			<p class="p-big mt-2">
 				<img src="prtl.jpg" width="180px" align="left" style="margin-right: 1em;">
-					  Prior to starting Tramline, <mark>Pratul</mark> was the co-founder & CTO of <a href="https://obvious.in/">Obvious</a>, where he helped clients like Myntra, Dunzo, Ola Cabs and Flipkart with mobile engineering challenges.
-				</p>
-		          <p class="p-big mt-2">
-					  Before Obvious, he was mobile engineer #1 at <a href="https://obvious.in/">Practo</a> (2011) and a contributor to <a href="https://obvious.in/">Drupal</a> (2008-2011).
-				  </p>
-			  </section>
+					Prior to starting Tramline, <mark>Pratul</mark> was the co-founder & CTO of <a href="https://obvious.in/">Obvious</a>, where he helped clients like Myntra, Dunzo, Ola Cabs and Flipkart with mobile engineering challenges.
+			</p>
+		    <p class="p-big mt-2">
+				Before Obvious, he was mobile engineer #1 at <a href="https://obvious.in/">Practo</a> (2011) and a contributor to <a href="https://obvious.in/">Drupal</a> (2008-2011).
+			</p>
 	</main>
+	<footer>
+			<i class="fa-brands fa-twitter-square"></i> <a href="https://twitter.com/tramlinehq">tramlinehq</a> •
+			<i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/company/tramline">tramline</a> 
+			<br/>			<br/>
+	</footer>
 	<!-- Calendly badge widget begin -->
 	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 	<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>

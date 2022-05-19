@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta property="og:title" content="Tramline">
-		<meta property="og:url" content="https://tramline.app">
-		<meta property="og:description" content="mobile release engineering, for everyone.">
-		<meta property="og:type" content="website">
-		<title>
-			Tramline
-		</title>
-		<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-		<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
-		<style>
-		.bigger {
-		  font-size: 1.35rem;
-		}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Tramline">
+    <meta property="og:url" content="https://tramline.app">
+    <meta property="og:description" content="mobile release engineering, for everyone.">
+    <meta property="og:type" content="website">
+    <title>Tramline</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	<script src="https://kit.fontawesome.com/ff488807cd.js" crossorigin="anonymous"></script>
+	<style>
+	    .bigger {
+	        font-size: 1.35rem;
+	    }
 		.smaller {
 			font-size: 1rem;
 		}
 		#logo {
 			margin-top: 24px;
 		}
-		</style>
-	</head>
-	<body>
-		<header>
-			<picture>
-				<source srcset="tram-181-dark.png" media="(prefers-color-scheme: dark)"/> 
-				<img id="logo" src="tram-181.png" alt="tramline" width="100px">
-			</picture>
-			<h1>
-				Tramline
-			</h1>
-			<p class="smaller">
-				mobile release engineering,<br/> <mark>for everyone.</mark>
-			</p>
-			<nav>
-				<a href="index.html">Home</a> 
-				<a href="context.html" id="current-page">Context</a> 
-				<a href="https://tollygunge.mataroa.blog">Blog</a>
-				<a href="https://discord.gg/4JrxDJQX">Discord</a>
-			</nav>
-		</header>
+		footer > a, footer > i {
+			font-size: 1.1rem;
+		}
+		article {
+			background-color: var(--disabled);
+		}
+	</style>
+</head>
+<body>
+    <header>
+		<picture>
+		  <source srcset="tram-181-dark.png" media="(prefers-color-scheme: dark)" />
+		  <img id="logo" src="tram-181.png" alt="tramline" width="100px" />
+		</picture>
+		<h1>Tramline</h1>
+		<p class="smaller">mobile release engineering,<br/><mark>for everyone.</mark></p>
+		<nav>
+		  <a href="index.html" id="current-page"><i class="fa-solid fa-mobile-retro"></i> Home</a>
+		  <a href="context.html"><i class="fa-solid fa-asterisk"></i> Context</a>
+		  <a href="https://tollygunge.mataroa.blog"><i class="fa-solid fa-note-sticky"></i> Blog</a>
+		</nav>
+	</header>
+		
 		<main>
 			<h3>Context</h3>
 			<p>
@@ -125,17 +126,22 @@
 			</p>
 			
 			<!-- ------------------------------- -->
-			
-			<section class="bottom round-full p-2 mt-2">
-				<p class="p-big mt-2">
-					<img src="prtl.jpg" width="180px" align="left" style="margin-right: 1em;"> 
+			<br/>
+		<hr/>
+			<p class="p-big mt-2">
+				<img src="prtl.jpg" width="180px" align="left" style="margin-right: 1em;">
 					Prior to starting Tramline, <mark>Pratul</mark> was the co-founder & CTO of <a href="https://obvious.in/">Obvious</a>, where he helped clients like Myntra, Dunzo, Ola Cabs and Flipkart with mobile engineering challenges.
-				</p>
-				<p class="p-big mt-2">
-					Before Obvious, he was mobile engineer #1 at <a href="https://obvious.in/">Practo</a> (2011) and a contributor to <a href="https://obvious.in/">Drupal</a> (2008-2011).
-				</p>
-			</section>
-		</main><!-- Calendly badge widget begin -->
+			</p>
+		    <p class="p-big mt-2">
+				Before Obvious, he was mobile engineer #1 at <a href="https://obvious.in/">Practo</a> (2011) and a contributor to <a href="https://obvious.in/">Drupal</a> (2008-2011).
+			</p>
+	</main>
+	<footer>
+			<i class="fa-brands fa-twitter-square"></i> <a href="https://twitter.com/tramlinehq">tramlinehq</a> •
+			<i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/company/tramline">tramline</a> 
+			<br/>			<br/>
+	</footer>
+
 		<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 		<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script> 
 		<script type="text/javascript">
